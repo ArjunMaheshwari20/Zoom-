@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Scheduler</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<script LANGUAGE="JavaScript" type="text/javascript">
+    function display() {
+      DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=500,height=310')
+      message = document.form1.name.value;
+      message += "<br> <br> <b>Date: </b>" + document.form1.Date.value;
+      message += "<br><b>Time:</b>" + document.form1.Time.value;
+      message += " <br> <b>Topic: </b>" + document.form1.Topic.value;
+      message += " <br><br> <b>Link: </b>"
+      message += " <br><b>https://us04web.zoom.us/j/9180935435?pwd=MG51N3JUYndJLzZ2Y3VWMjU4c25oZz09 </b>"
+      message += " <br><br> <b>Meeting Id: 918 093 5435 </b>"
+      message += " <br> <b>Passcode: 278903 </b>"
+
+      DispWin.document.write(message);
+      
+    }
+  </script>
+<body>
+  
+    <h1 align="center">Zoom Meeting Scheduler</h1>
+    <div class="container">
+    <form name="form1">
+        <div class="form-group">
+          <input type="date" class="form-control" id="formGroupExampleInput" placeholder="Enter Date" NAME="Date">
+        </div>
+        <br>
+        <div class="form-group">
+          <input type="time" class="form-control" id="formGroupExampleInput2" placeholder="Enter Time"  NAME="Time">
+        </div>
+        <br>
+
+        <div class="form-group">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Topic"  NAME="Topic">
+          </div>
+          <br>
+          <hr size="4" color="blue" width="100%">
+         <h1 align="center"> Choose Name</h1>
+         <div class="form-check">
+          <input class="form-check-input" type="radio" name="name" id="exampleRadios1" value="Dr. Meenakshi Maheshwari Has Invited You to  Scheduled Zoom Meeting" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Dr. Meenakshi Maheshwari
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="name" id="exampleRadios2" value="Arjun Maheshwari Has Invited You to  Scheduled Zoom Meeting">
+          <label class="form-check-label" for="exampleRadios1">
+            Arjun Maheshwari
+          </label>
+        </div>
+
+<br> 
+          <input TYPE="BUTTON" VALUE="Schedule Zoom Meeting" onClick="display();">
+
+      </form>
+</div>
+<br>
+<div class="alert alert-info" role="alert">
+    <b><center>CopyRight@2020 Arjun Maheshwari</center></b>
+  </div>
+</body>
+</html>
